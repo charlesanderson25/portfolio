@@ -1,0 +1,55 @@
+/* Reset CSS */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Cabeçalho */
+
+.main-menu{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./assets/fundo-preto-antigo-textura-do-grunge-papel-de-parede-escuro-quadro-negro-quadro-negro-parede-da-sala.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid red;
+}
+
+#portfolio{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 65px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 45px;
+    padding-top: 65px;
+    padding-left: 150px;
+    padding-right: 150px;
+    border: 2px solid yellow;
+    width: 100%;
+}       
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
