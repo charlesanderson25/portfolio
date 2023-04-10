@@ -18,13 +18,13 @@
     --main-tittle-margin: 20px 0px 20px;
     --main-tittle-font-size: 75px;
 
-    --secondary-tittle-h3-color: white;
-    --secondary-tittle-h3-font-size: 25px;
-    --secondary-tittle-h3-margim-bottom: 50px;
+    --secondary-text-h3-color: white;
+    --secondary-text-h3-font-size: 25px;
+    --secondary-text-h3-margim-bottom: 50px;
 
-    --secondary-tittle-h4-color: #fcfc;
-    --secondary-tittle-h4-letter-spacing: 2px;
-    --secondary-tittle-h4-font-size: 20px;
+    --secondary-text-h4-color: #fcfc;
+    --secondary-text-h4-letter-spacing: 2px;
+    --secondary-text-h4-font-size: 20px;
 
 }
 
@@ -95,7 +95,7 @@ a:hover{
     transform: translate(-8%);
 }
 
-#programming-icon{
+#personal-picture{
     position: absolute;
     top: 25%;
     right: 15%;
@@ -109,15 +109,15 @@ a:hover{
     font-size: var(--main-tittle-font-size);
 }
 
-.secondary-tittle-h3{
-    color: var(--secondary-tittle-h3-color);
-    font-size: var(--secondary-tittle-h3-font-size);
-    margin-bottom: var(--secondary-tittle-h3-margim-bottom);
+.secondary-text-h3{
+    color: var(--secondary-text-h3-color);
+    font-size: var(--secondary-text-h3-font-size);
+    margin-bottom: var(--secondary-text-h3-margim-bottom);
 }
 
-.secondary-tittle-h4{
-    color: var(--secondary-tittle-h4-color);
-    letter-spacing: var(--secondary-tittle-h4-letter-spacing);
-    font-size: var(--secondary-tittle-h4-font-size);
+.secondary-text-h4{
+    color: var(--secondary-text-h4-color);
+    letter-spacing: var(--secondary-text-h4-letter-spacing);
+    font-size: var(--secondary-text-h4-font-size);
 }
 
