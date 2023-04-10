@@ -1,4 +1,4 @@
-/* Reset CSS */
+/**************** Reset CSS *****************/
 
 *{
     margin: 0;
@@ -7,7 +7,28 @@
     box-sizing: border-box;
 }
 
-/* Cabeçalho */
+/**************** Variáveis *****************/
+
+:root{
+    --color-red: #f9004d;
+    --color-secundaryPurple: #fcfc;
+    --color-backgroundBlack: #101010;
+
+    --main-tittle-color: white;
+    --main-tittle-margin: 20px 0px 20px;
+    --main-tittle-font-size: 75px;
+
+    --secondary-tittle-h3-color: white;
+    --secondary-tittle-h3-font-size: 25px;
+    --secondary-tittle-h3-margim-bottom: 50px;
+
+    --secondary-tittle-h4-color: #fcfc;
+    --secondary-tittle-h4-letter-spacing: 2px;
+    --secondary-tittle-h4-font-size: 20px;
+
+}
+
+/**************** Cabeçalho *****************/
 
 .main-menu{
     height: 100vh;
@@ -22,7 +43,6 @@
 .header{
     display: flex;
     flex-direction: row;
-    border: 2px solid red;
 }
 
 #portfolio{
@@ -31,7 +51,15 @@
     align-items: center;
     padding-top: 65px;
     padding-left: 150px;
-    padding-right: 150px;
+    padding-right: 180px;
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.red-color{
+    color: var(--color-red);
 }
 
 .nav-bar{
@@ -42,14 +70,54 @@
     gap: 45px;
     padding-top: 65px;
     padding-left: 150px;
-    padding-right: 150px;
-    border: 2px solid yellow;
+    padding-right: 350px;
     width: 100%;
 }       
 
 a{
     text-decoration: none;
     color: white;
+    text-transform: capitalize;
+    font-weight: bold;
 }
 
+a:hover{
+    color: var(--color-red);
+    transition: .4s;
+}
+
+/**************** Conteúdo Principal *****************/
+
+.main-content{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    transform: translate(-8%);
+}
+
+#programming-icon{
+    position: absolute;
+    top: 25%;
+    right: 15%;
+    width: 600px;
+    height: 600px;
+}
+
+.main-title{
+    color: var(--main-tittle-color);
+    margin: var(--main-tittle-margin);
+    font-size: var(--main-tittle-font-size);
+}
+
+.secondary-tittle-h3{
+    color: var(--secondary-tittle-h3-color);
+    font-size: var(--secondary-tittle-h3-font-size);
+    margin-bottom: var(--secondary-tittle-h3-margim-bottom);
+}
+
+.secondary-tittle-h4{
+    color: var(--secondary-tittle-h4-color);
+    letter-spacing: var(--secondary-tittle-h4-letter-spacing);
+    font-size: var(--secondary-tittle-h4-font-size);
+}
 
