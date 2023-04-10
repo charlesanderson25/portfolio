@@ -97,12 +97,12 @@ a:hover{
     transform: translate(-8%);
 }
 
-#personal-picture{
+#icon-programming{
     position: absolute;
-    top: 25%;
-    right: 15%;
-    width: 600px;
-    height: 600px;
+    top: 30%;
+    right: 10%;
+    width: 700px;
+    height: 400px;
 }
 
 .main-title{
