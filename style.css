@@ -21,10 +21,12 @@
     --secondary-text-h3-color: white;
     --secondary-text-h3-font-size: 25px;
     --secondary-text-h3-margim-bottom: 50px;
+    --secondary-text-h3-font-weigth: bold;
 
     --secondary-text-h4-color: #fcfc;
     --secondary-text-h4-letter-spacing: 2px;
     --secondary-text-h4-font-size: 20px;
+    --secondary-text-h4-font-weigth: bold;
 
 }
 
@@ -113,11 +115,13 @@ a:hover{
     color: var(--secondary-text-h3-color);
     font-size: var(--secondary-text-h3-font-size);
     margin-bottom: var(--secondary-text-h3-margim-bottom);
+    font-weight: var(--secondary-text-h4-font-weigth);
 }
 
 .secondary-text-h4{
     color: var(--secondary-text-h4-color);
     letter-spacing: var(--secondary-text-h4-letter-spacing);
     font-size: var(--secondary-text-h4-font-size);
+    font-weight: var(--secondary-text-h4-font-weigth);
 }
 
