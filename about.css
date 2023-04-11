@@ -90,3 +90,11 @@
     color: var(--color-red);
     font-size: 14px;
 }
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
