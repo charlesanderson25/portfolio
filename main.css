@@ -124,18 +124,3 @@ a:hover{
     font-size: var(--secondary-text-h4-font-size);
     font-weight: var(--secondary-text-h4-font-weigth);
 }
-
-/**************** About Me *****************/
-
-#personal-picture{
-    width: 600px;
-    height: 600px;
-}
-
-.row-about-me{
-    border: 2px solid red;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
