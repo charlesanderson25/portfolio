@@ -59,23 +59,23 @@
                     <p>Olá, pode me chamar de Charles. Sou casado e tenho uma filha. Nasci no estado da Bahia, no coração da chapada diamantina na cidade de Morro do Chapéu. Trabalho na sede do Banco do Brasil e moro em Brasília. Estudo no Bootcamp Desenvolvedor Web Full Stack no Instituto Infnet do Rio de Janeiro.</p>
 
                     <div class="tab-titles">
-                        <p id="skills" class="tab-links active-link">Skills</p>
-                        <p id="experience" class="tab-links">Experience</p>
-                        <p id="education" class="tab-links">Education</p>
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
-                    <div class="tab-contents active-tab">
+                    <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li class="list-item"><span class="job-item">Data Analyst</span><br>Análise de Dados com SAS Enterprise Guide</li>
                             <li class="list-item"><span class="job-item">Web Development</span><br>Desenvolvimento de aplicações Web</li>
                         </ul>
                     </div>
-                    <div class="tab-contents">
+                    <div class="tab-contents" id="experience">
                         <ul>
                             <li class="list-item"><span class="job-item">Data Analyst</span><br>Analista de Dados no Banco do Brasil</li>
                             <li class="list-item"><span class="job-item">Web Development</span><br>Construção de Aplicações Web em Projetos Pessoais</li>
                         </ul>
                     </div>
-                    <div class="tab-contents">
+                    <div class="tab-contents" id="education">
                         <ul>
                             <li class="list-item"><span class="job-item">2021</span><br>Análise e Desenvolvimento de Sistemas - Uninter</li>
                             <li class="list-item"><span class="job-item">2022</span><br>Arquitetura de Sistemas de Informação - Cenes</li>
@@ -90,3 +90,5 @@
     <script src="./about.js"></script>
 </body>
 </html>
+
+
