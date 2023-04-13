@@ -1,0 +1,137 @@
+/**************** Reset CSS *****************/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+/**************** Variáveis *****************/
+
+:root{
+    --color-red: #f9004d;
+    --color-secundaryPurple: #fcfc;
+    --color-backgroundBlack: #101010;
+
+    --main-tittle-color: white;
+    --main-tittle-margin: 20px 0px 20px;
+    --main-tittle-font-size: 75px;
+
+    --secondary-text-h3-color: white;
+    --secondary-text-h3-font-size: 25px;
+    --secondary-text-h3-margim-bottom: 50px;
+    --secondary-text-h3-font-weigth: bold;
+
+    --secondary-text-h4-color: #fcfc;
+    --secondary-text-h4-letter-spacing: 2px;
+    --secondary-text-h4-font-size: 20px;
+    --secondary-text-h4-font-weigth: bold;
+
+}
+
+#contact{
+    width: 100%;
+    background-image: url(./assets/fundo-preto-antigo-textura-do-grunge-papel-de-parede-escuro-quadro-negro-quadro-negro-parede-da-sala.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    /* border: 2px solid black; */
+}
+
+.row-contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contact-left{
+    flex-basis: 35%;
+    /* border: 2px solid red; */
+}
+
+.contact-right{
+    flex-basis: 60%;
+}
+
+.contact-left p{
+    margin-bottom: 30px;
+}
+
+.contact-left p i{
+    color: var(--color-red);
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-media-icons{
+    margin-top: 30px;
+}
+
+.social-media-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-media-icons a:hover{
+    color: var(--color-red);
+    transform: translateY(-5px);
+}
+
+.btn-cv{
+    display: inline-block;
+    background: var(--color-red);
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid var(--color-red);
+    padding:14px 50px ;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.5s;
+}
+
+.btn-cv:hover{
+    background: var(--color-red);
+    color: white;
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #FFF;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .btn-cv2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: var(--color-backgroundBlack);
+    font-weight: 300;
+    margin-top: 20px;
+    color: var(--color-red);
+}
