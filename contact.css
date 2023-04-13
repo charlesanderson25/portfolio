@@ -32,7 +32,7 @@
 
 #contact{
     width: 100%;
-    background-image: url(./assets/fundo-preto-antigo-textura-do-grunge-papel-de-parede-escuro-quadro-negro-quadro-negro-parede-da-sala.jpg);
+    background-color: var(--color-backgroundBlack);
     background-size: cover;
     background-position: center;
     color: white;
