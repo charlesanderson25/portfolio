@@ -31,9 +31,15 @@
 }
 
 #my-services{
-    padding: 30px 110px;
+    /* padding: 30px 110px; */
     background-image: url(./assets/fundo-preto-antigo-textura-do-grunge-papel-de-parede-escuro-quadro-negro-quadro-negro-parede-da-sala.jpg);
     color: white;
+
+    padding: 80px 120px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .row-services{

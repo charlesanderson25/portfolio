@@ -1,0 +1,130 @@
+/**************** Reset CSS *****************/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+/**************** Variáveis *****************/
+
+:root{
+    --color-red: #f9004d;
+    --color-secundaryPurple: #fcfc;
+    --color-backgroundBlack: #101010;
+
+    --main-tittle-color: white;
+    --main-tittle-margin: 20px 0px 20px;
+    --main-tittle-font-size: 75px;
+
+    --secondary-text-h3-color: white;
+    --secondary-text-h3-font-size: 25px;
+    --secondary-text-h3-margim-bottom: 50px;
+    --secondary-text-h3-font-weigth: bold;
+
+    --secondary-text-h4-color: #fcfc;
+    --secondary-text-h4-letter-spacing: 2px;
+    --secondary-text-h4-font-size: 20px;
+    --secondary-text-h4-font-weigth: bold;
+
+}
+
+#my-work{
+    background-color: var(--color-backgroundBlack);
+    padding: 80px 120px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+}
+
+.work-list{
+    display: flex;
+    flex-direction: row;
+    -ms-flex-align: center;
+    gap: 40px;
+    justify-content: space-around;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px; */
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-my-work{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.7), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: heigth 0.5s;
+}
+
+.sub-tittleh3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.icon-layer{
+    margin-top: 20px;
+    color: var(--color-red);
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.work:hover .img-my-work{
+    transform: scale(1.1);
+}
+
+.work:hover .layer{
+    height: 100%;
+}
+
+.see-more-my-work{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid var(--color-red);
+    padding:14px 50px ;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.5s;
+}
+
+.see-more-my-work:hover{
+    background: var(--color-red);
+    color: white;
+}
