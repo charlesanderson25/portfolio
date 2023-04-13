@@ -31,24 +31,26 @@
 }
 
 #my-services{
-    padding: 30px 0;
+    padding: 30px 110px;
     background-image: url(./assets/fundo-preto-antigo-textura-do-grunge-papel-de-parede-escuro-quadro-negro-quadro-negro-parede-da-sala.jpg);
     color: white;
+}
+
+.row-services{
+    /* border: 2px solid red; */
 }
 
 .services-list{
     display: flex;
     flex-direction: row;
     -ms-flex-align: center;
-    
+    gap: 40px;
+    justify-content: space-around;
     /* display: grid; */
     /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
-    grid-gap: 40px;
+    /* grid-gap: 40px; */
     margin-top: 50px;
-}
-
-.row-services{
-    border: 2px solid red;
+    margin-bottom: 50px;
 }
 
 .card-services{
