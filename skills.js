@@ -32,8 +32,8 @@
 // Trocar/alternar conteúdo página skills a cada 5 segundos
 
     setInterval(() => {
-        const skills1 = document.querySelector('#skills-web');
-        const skills2 = document.querySelector('#skills-data');
+        const skills1 = document.getElementById('skills-web');
+        const skills2 = document.getElementById('skills-data');
         const container = document.querySelector('#secondary-web');
 
         container.insertBefore(skills2, skills1);
