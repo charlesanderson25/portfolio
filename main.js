@@ -12,7 +12,7 @@ const getTextSecondaryTextH3 = document.getElementById('secondary-text-h3');
 
 const addTextSecondaryTextH3 = ' e Analista de Dados';
 
-const insertTextSecondaryTextH3 = `${getTextSecondaryTextH3.textContent} ${addTextSecondaryTextH3}!`;
+const insertTextSecondaryTextH3 = `${getTextSecondaryTextH3.textContent} ${addTextSecondaryTextH3}`;
 getTextSecondaryTextH3.textContent = insertTextSecondaryTextH3;
 
 // Validação form input textarea 
@@ -28,6 +28,15 @@ submitButton.addEventListener('click', function(event) {
     }else{
 
     }
+});
+
+// Evento ao clicar em Contact => rolagem automática para a área do formulário 
+
+const getContactLink = document.getElementById('contact-link');
+const getFormArea = document.getElementById('contact');
+
+getContactLink.addEventListener('click', () => {
+    getFormArea.scrollIntoView({ behavior: 'smooth' });
 });
 
 
