@@ -159,10 +159,10 @@
                 </div>
                 <div class="contact-right">
                     <form>
-                        <input type="text" name="Name" placeholder="Informe Seu Nome" required>
-                        <input type="email" name="Email" placeholder="Informe Seu E-mail" required>
-                        <textarea name="Message" rows="6" id="textarea" placeholder="Escreva Sua Mensagem"></textarea>
-                        <button type="submit" class="btn-cv btn-cv2">Submit</button>
+                        <input type="text" name="Name" id="input-name" placeholder="Informe Seu Nome" autocomplete="on" minlength="4" maxlength="40" required>
+                        <input type="email" name="Email" id="input-email" placeholder="Informe Seu E-mail" autocomplete="on" required>
+                        <textarea name="Message" rows="6" id="textarea" placeholder="Escreva Sua Mensagem" maxlength="300"></textarea>
+                        <button type="submit" id="button-submit" class="btn-cv btn-cv2">Submit</button>
                     </form>
                 </div>
             </div>

@@ -14,3 +14,20 @@ const addTextSecondaryTextH3 = ' e Analista de Dados';
 
 const insertTextSecondaryTextH3 = `${getTextSecondaryTextH3.textContent} ${addTextSecondaryTextH3}!`;
 getTextSecondaryTextH3.textContent = insertTextSecondaryTextH3;
+
+// Validação form input textarea 
+
+const submitButton = document.getElementById('button-submit');
+
+submitButton.addEventListener('click', function(event) {
+    const textAreaField = document.getElementById('textarea');
+    const textAreaFieldValue = textAreaField.value;
+
+    if(textAreaFieldValue.trim() === ''){
+        alert('Por favor, preencha o campo "Escreva Sua Mensagem" ');
+    }else{
+
+    }
+});
+
+
