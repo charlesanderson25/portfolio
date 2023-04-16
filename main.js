@@ -39,4 +39,10 @@ getContactLink.addEventListener('click', () => {
     getFormArea.scrollIntoView({ behavior: 'smooth' });
 });
 
+// Botão 'See More' redireciona para o github
 
+const seeMoreRedirectToGitHub = document.getElementById('see-more-my-work');
+
+seeMoreRedirectToGitHub.addEventListener('click', redirect =>{
+    window.open("https://github.com/charlesanderson25", "_blank");
+});

@@ -1,3 +1,5 @@
+// Cria modal ao clicar no botão Learn More
+
 const learMoreWeb = document.getElementById('btn-web-developer'); 
 
 learMoreWeb.addEventListener('click', () => {
