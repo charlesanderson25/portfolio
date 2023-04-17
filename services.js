@@ -11,6 +11,7 @@ learMoreWeb.addEventListener('click', () => {
 
         modalWeb.appendChild(modalWebText);
         document.body.appendChild(modalWeb);
+        console.log(modalWeb);
         
         modalWeb.addEventListener('click', () => {
             modalWeb.remove();
