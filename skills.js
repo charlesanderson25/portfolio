@@ -34,7 +34,7 @@
     setInterval(() => {
         const skills1 = document.getElementById('skills-web');
         const skills2 = document.getElementById('skills-data');
-        const container = document.querySelector('#secondary-web');
+        const container = document.querySelector('#father');
 
         container.insertBefore(skills2, skills1);
     }, 5000);
