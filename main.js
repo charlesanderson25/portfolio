@@ -39,6 +39,15 @@ getContactLink.addEventListener('click', () => {
     getFormArea.scrollIntoView({ behavior: 'smooth' });
 });
 
+// Evento ao clicar em My Work => rolagem automática para a área My Work
+
+const getMyWorkLink = document.getElementById('my-work-link');
+const getMyWorkArea = document.getElementById('my-work');
+
+getMyWorkLink.addEventListener('click', () =>{
+    getMyWorkArea.scrollIntoView({ behavior: 'smooth' });
+});
+
 // Botão 'See More' redireciona para o github
 
 const seeMoreRedirectToGitHub = document.getElementById('see-more-my-work');
