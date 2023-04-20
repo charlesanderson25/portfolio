@@ -39,6 +39,18 @@
         container.insertBefore(skills2, skills1);
     }, 5000);
 
+// Evento de click para retirecionar btn My Work para seu conteúdo no index.html
+
+    document.getElementById('my-work-link-page-skills').addEventListener('click', () =>{
+        window.location.href = 'index.html#my-work'; 
+    });
+
+// Evento de click para retirecionar btn Contact para seu conteúdo no index.html
+
+    document.getElementById('contact-link-page-skills').addEventListener('click', () =>{
+        window.location.href = 'index.html#contact'; 
+    });
+
 
 
 
