@@ -14,17 +14,37 @@ submitButton.addEventListener("click", function (event) {
 
 // Limpeza dos campos do formulário após submit
 
-const formContact = document.getElementById("form");
+// const formContact = document.getElementById("form-contact");
+
+// formContact.addEventListener("submit", async function (event) {
+//   event.preventDefault();
+
+//   const formFields = document.querySelectorAll(".form-field");
+
+//   await Promise.all(
+//     Array.from(formFields).map(async function (field) {
+//       field.value = "";
+//     })
+//   );
+// });
+
+const formContact = document.getElementById("form-contact");
 
 formContact.addEventListener("submit", async function (event) {
   event.preventDefault();
-  alert("botão clicado!");
+  //   alert("botão clicado!");
 
-  const formFields = document.querySelectorAll("form-field");
+  const formFields = document.querySelectorAll(".form-field");
 
-  await Primise.all(
+  await Promise.all(
     Array.from(formFields).map(async function (field) {
       field.value = "";
     })
-  );
+  )
+    .then(() => {
+      console.log("Promise resolvida com sucesso!");
+    })
+    .catch((error) => {
+      console.log(`A Promise foi rejeitada: ${error}`);
+    });
 });
