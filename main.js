@@ -40,3 +40,18 @@ const seeMoreRedirectToGitHub = document.getElementById("see-more-my-work");
 seeMoreRedirectToGitHub.addEventListener("click", (redirect) => {
   window.open("https://github.com/charlesanderson25", "_blank");
 });
+
+// Requisição HTTP com fetch consumindo o JSON
+
+fetch('./profile.json')
+  .then(function(response){
+    return response.json();
+  })
+  .then(function(data){
+    console.log(data);
+  })
+  .catch(function(error){
+    console.error(error);
+  });
+
+  
