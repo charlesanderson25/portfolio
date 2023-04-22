@@ -43,15 +43,13 @@ seeMoreRedirectToGitHub.addEventListener("click", (redirect) => {
 
 // Requisição HTTP com fetch consumindo o JSON
 
-fetch('./profile.json')
-  .then(function(response){
+fetch("./profile.json")
+  .then(function (response) {
     return response.json();
   })
-  .then(function(data){
+  .then(function (data) {
     console.log(data);
   })
-  .catch(function(error){
+  .catch(function (error) {
     console.error(error);
   });
-
-  
