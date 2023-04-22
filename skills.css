@@ -1,0 +1,205 @@
+/**************** Reset CSS *****************/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+/**************** Variáveis *****************/
+
+:root{
+    --color-red: #f9004d;
+    --color-secundaryPurple: #fcfc;
+    --color-backgroundBlack: #101010;
+
+    --main-tittle-color: white;
+    --main-tittle-margin: 20px 0px 20px;
+    --main-tittle-font-size: 75px;
+
+    --secondary-text-h3-color: white;
+    --secondary-text-h3-font-size: 25px;
+    --secondary-text-h3-margim-bottom: 50px;
+    --secondary-text-h3-font-weigth: bold;
+
+    --secondary-text-h4-color: #fcfc;
+    --secondary-text-h4-letter-spacing: 2px;
+    --secondary-text-h4-font-size: 20px;
+    --secondary-text-h4-font-weigth: bold;
+
+}
+
+/**************** Cabeçalho *****************/
+
+.header{
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    background-image: url(./assets/fundo-preto-antigo-textura-do-grunge-papel-de-parede-escuro-quadro-negro-quadro-negro-parede-da-sala.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#portfolio{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 65px;
+    padding-left: 150px;
+    padding-right: 180px;
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.red-color{
+    color: var(--color-red);
+}
+
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 45px;
+    padding-top: 65px;
+    padding-left: 150px;
+    padding-right: 350px;
+    width: 100%;
+}       
+
+a{
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+a:hover{
+    color: var(--color-red);
+    transition: .4s;
+}
+
+/**************** Skills *****************/
+
+.lista-skills{
+    color: #fcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    margin-bottom: 45px;
+    margin-left: 45px;
+}
+
+.sobre-mim{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #101010;
+}
+
+.sobre-mim img{
+    width: 40%;
+    height: auto;
+}
+
+.texto-sobre-mim{
+    width: 600px;
+}
+
+.conteudo-secundario{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.texto-sobre-mim h2{
+    color: white;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.texto-sobre-mim h5{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+
+}
+
+.texto-sobre-mim p{
+    color: #fcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    margin-bottom: 45px;
+}
+
+/**************** Rodapé *****************/
+
+footer{
+    width: 100%;
+    height: 290px;
+    background: #131313;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p:first-child{
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+footer p:nth-child(2){
+    color: white;
+    font-size: 17px;
+    /* width: 500px; */
+    width: 100%;
+    text-align: center;
+    line-height: 26px;
+}
+
+.redes-sociais{
+    display: flex;
+    flex-direction: row;
+}
+
+.redes-sociais a{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: #f9004d;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.redes-sociais a:hover{
+    transform: scale(1.3);
+    transition: .3s;
+}
+
+.fim{
+    /* position: absolute; */
+    color: #f9004d;
+    font-size: 14px;
+    margin-top: 45px;
+    letter-spacing: 2px;
+}

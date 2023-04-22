@@ -1,0 +1,126 @@
+/**************** Reset CSS *****************/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+/**************** Variáveis *****************/
+
+:root{
+    --color-red: #f9004d;
+    --color-secundaryPurple: #fcfc;
+    --color-backgroundBlack: #101010;
+
+    --main-tittle-color: white;
+    --main-tittle-margin: 20px 0px 20px;
+    --main-tittle-font-size: 75px;
+
+    --secondary-text-h3-color: white;
+    --secondary-text-h3-font-size: 25px;
+    --secondary-text-h3-margim-bottom: 50px;
+    --secondary-text-h3-font-weigth: bold;
+
+    --secondary-text-h4-color: #fcfc;
+    --secondary-text-h4-letter-spacing: 2px;
+    --secondary-text-h4-font-size: 20px;
+    --secondary-text-h4-font-weigth: bold;
+
+}
+
+/**************** Cabeçalho *****************/
+
+.main-menu{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./assets/fundo-preto-antigo-textura-do-grunge-papel-de-parede-escuro-quadro-negro-quadro-negro-parede-da-sala.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+}
+
+#portfolio{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 65px;
+    padding-left: 150px;
+    padding-right: 180px;
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.red-color{
+    color: var(--color-red);
+}
+
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 45px;
+    padding-top: 65px;
+    padding-left: 150px;
+    padding-right: 350px;
+    width: 100%;
+}       
+
+a{
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+a:hover{
+    color: var(--color-red);
+    transition: .4s;
+}
+
+/**************** Conteúdo Principal *****************/
+
+.main-content{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    transform: translate(-8%);
+}
+
+#icon-programming{
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    width: 700px;
+    height: 400px;
+}
+
+.main-title{
+    color: var(--main-tittle-color);
+    margin: var(--main-tittle-margin);
+    font-size: var(--main-tittle-font-size);
+}
+
+.secondary-text-h3{
+    color: var(--secondary-text-h3-color);
+    font-size: var(--secondary-text-h3-font-size);
+    margin-bottom: var(--secondary-text-h3-margim-bottom);
+    font-weight: var(--secondary-text-h4-font-weigth);
+}
+
+.secondary-text-h4{
+    color: var(--secondary-text-h4-color);
+    letter-spacing: var(--secondary-text-h4-letter-spacing);
+    font-size: var(--secondary-text-h4-font-size);
+    font-weight: var(--secondary-text-h4-font-weigth);
+}

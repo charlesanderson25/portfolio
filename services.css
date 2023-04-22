@@ -1,0 +1,118 @@
+/**************** Reset CSS *****************/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+/**************** Variáveis *****************/
+
+:root{
+    --color-red: #f9004d;
+    --color-secundaryPurple: #fcfc;
+    --color-backgroundBlack: #101010;
+
+    --main-tittle-color: white;
+    --main-tittle-margin: 20px 0px 20px;
+    --main-tittle-font-size: 75px;
+
+    --secondary-text-h3-color: white;
+    --secondary-text-h3-font-size: 25px;
+    --secondary-text-h3-margim-bottom: 50px;
+    --secondary-text-h3-font-weigth: bold;
+
+    --secondary-text-h4-color: #fcfc;
+    --secondary-text-h4-letter-spacing: 2px;
+    --secondary-text-h4-font-size: 20px;
+    --secondary-text-h4-font-weigth: bold;
+
+}
+
+#my-services{
+    /* padding: 30px 110px; */
+    background-image: url(./assets/fundo-preto-antigo-textura-do-grunge-papel-de-parede-escuro-quadro-negro-quadro-negro-parede-da-sala.jpg);
+    color: white;
+
+    padding: 80px 120px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.services-list{
+    display: flex;
+    flex-direction: row;
+    -ms-flex-align: center;
+    gap: 40px;
+    justify-content: space-around;
+    /* display: grid; */
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+    /* grid-gap: 40px; */
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.card-services{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.card-services:hover{
+    background: var(--color-red);
+    transform: translateY(-10px);
+}
+
+#icon-web-developer{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+#icon-data-analyst{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.tittle-services{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.link-services{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+.modal-web{
+    position: fixed;
+    display: block;
+    z-index: 1;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    
+    overflow: auto;
+}
+
+.modal-content{
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 2px solid #888;
+    width: 80%;
+    max-width: 600px;
+}
