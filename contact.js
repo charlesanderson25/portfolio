@@ -28,6 +28,34 @@ submitButton.addEventListener("click", function (event) {
 //   );
 // });
 
+// New Promise 
+
+const form = document.getElementById('form-contact');
+const inputs = document.querySelectorAll(".form-field");
+
+function clearForm(){
+  inputs.forEach(input =>{
+    input.value = '';
+  });
+}
+
+form.addEventListener('submit', (event) =>{
+  event.preventDefault();
+
+  const clearPromise = new Promise((resolve, reject)=>{
+    setTimeout(() => {
+      clearForm();
+      resolve();
+    }, 1000);
+  });
+  clearPromise.then(() => {
+    alert('Dados enviados com sucesso');
+  });
+
+});
+
+// Limpeza dos campos do formulário após submit
+
 const formContact = document.getElementById("form-contact");
 
 formContact.addEventListener("submit", async function (event) {
