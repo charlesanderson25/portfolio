@@ -123,3 +123,95 @@ a:hover {
   font-size: var(--secondary-text-h4-font-size);
   font-weight: var(--secondary-text-h4-font-weigth);
 }
+
+/**************** Responsividade *****************/
+
+/* Estilos para larguras de tela até 768px (tablets e celulares) */
+@media only screen and (max-width: 768px) {
+  /* Estilos para o cabeçalho */
+  .portfolio {
+    font-size: 24px;
+  }
+
+  .nav-bar {
+    /* display: none; */
+    padding-left: 60%;
+  }
+  .main-menu {
+    display: flex;
+    flex-direction: column;
+  }
+  #my-work-link,
+  #contact-link {
+    display: block;
+    margin-top: 10px;
+  }
+
+  /* Estilos para o conteúdo principal */
+  .main-content {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .main-title {
+    font-size: 36px;
+  }
+  #secondary-text-h3 {
+    font-size: 20px;
+  }
+  #icon-programming {
+    width: 80%;
+    margin-top: 50px;
+  }
+
+  /* Estilos para a seção "About Me" */
+  .about-col-1 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  #personal-picture {
+    width: 80%;
+  }
+  .tab-links {
+    font-size: 14px;
+  }
+  .tab-contents {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 1630px) {
+  #icon-programming {
+    display: none;
+  }
+}
+
+/* Quando a largura da tela for menor ou igual a 1630px */
+@media only screen and (max-width: 1630px) {
+  .header {
+    padding: 20px 40px;
+  }
+}
+
+/* Quando a largura da tela for menor ou igual a 1030px */
+@media only screen and (max-width: 1085px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+  .nav-bar {
+    margin-top: 20px;
+    padding-left: 60%;
+  }
+}
+
+/* Quando a largura da tela for menor ou igual a 768px */
+@media only screen and (max-width: 768px) {
+  .header {
+    padding: 10px;
+  }
+  .nav-bar {
+    margin-top: 10px;
+  }
+}
