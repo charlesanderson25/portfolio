@@ -87,6 +87,10 @@ a:hover {
   transition: 0.4s;
 }
 
+#my-work-link, #contact-link{
+  cursor: pointer;
+}
+
 /**************** Conteúdo Principal *****************/
 
 .main-content {
