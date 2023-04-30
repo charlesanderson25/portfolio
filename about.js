@@ -16,17 +16,13 @@ function opentab(tabname) {
 
 // Evento de click para retirecionar btn My Work para seu conteúdo no index.html
 
-document
-  .getElementById("my-work-link-page-about")
-  .addEventListener("click", () => {
+document.getElementById("my-work-link-page-about").addEventListener("click", () => {
     window.location.href = "index.html#my-work";
   });
 
 // Evento de click para retirecionar btn Contact para seu conteúdo no index.html
 
-document
-  .getElementById("contact-link-page-about")
-  .addEventListener("click", () => {
+document.getElementById("contact-link-page-about").addEventListener("click", () => {
     window.location.href = "index.html#contact";
   });
 
